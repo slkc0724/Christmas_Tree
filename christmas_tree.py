@@ -1,5 +1,6 @@
 import turtle
 turtle.shape("turtle")
+turtle.speed(7)
 
 def star(turtle, color, size, x, y):
 	turtle.penup()
