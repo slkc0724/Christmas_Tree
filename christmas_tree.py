@@ -1,6 +1,6 @@
 import turtle
 turtle.shape("turtle")
-turtle.speed(5)
+turtle.speed(10)
 
 def star(turtle, color, size, x, y):
 	turtle.penup()
@@ -61,14 +61,15 @@ def tree_base(turtle, color, size):
 	turtle.end_fill()
 	turtle.penup()
 	turtle.color("red")
-	turtle.right(90)
+	turtle.left(180)
 	turtle.forward(size)
+	turtle.forward(75)
 	turtle.right(90)
-	turtle.forward(100)
-	turtle.right(180)
-	turtle.write("Merry", font = 1000)
-	turtle.forward(size + 100)
-	turtle.write("Christmas", font = 1000)
+	turtle.forward(400)
+	turtle.right(90)
+	turtle.write("Merry", move = True, align = "center", font = ('Bradley Hand', 48, "normal"))
+	turtle.forward(275)
+	turtle.write("Christmas", move = True, align = "center", font = ('Bradley Hand', 48, "normal"))
 	turtle.hideturtle()
 
 star(turtle, "yellow", 15, 0, 300)
